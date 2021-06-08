@@ -1,0 +1,11 @@
+.top{
+    border: 1px solid black;
+    width:500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.bottom{
+    border: 1px solid black;
+    width:500px;
+    padding:20px ;
+}

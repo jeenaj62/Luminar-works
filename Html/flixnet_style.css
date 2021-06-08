@@ -1,0 +1,45 @@
+.terminal{
+    float: left;
+    text-align: center;
+    border: 1px solid red; 
+    width: 398px;
+    height:190px;
+ 
+}
+.img{
+    float: left;
+    
+}
+h2{
+    color: white;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+  
+}
+h3{
+    color: white;
+    text-align: center;
+}
+body{
+    background-color: black;
+}
+p{
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+    font-size: small;
+}
+.first{
+    background-color: blue;
+}
+.second{
+    background-color:red;
+}
+.third{
+    background-color: blue;
+}
+.column{
+    width: 398px;
+    height:200px;
+    float: left;
+    border: 1px solid red; 
+}

@@ -1,0 +1,33 @@
+.main-head{
+    text-align: center;
+    color:purple;
+}
+body{
+    background-color: black;
+}
+.sub{
+    color:blue;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+}
+.main{
+   border: 4px solid blueviolet; 
+   width: 200px;
+   height: 300px;
+   background-color: purple;
+   color: wheat;
+   text-align: center;
+   float: left;
+}
+.galaxydiv{
+    background-color: red;
+}
+.samdiv{
+    background-color: seagreen;
+}
+.main h1{
+    font-size: 25px;
+    color:white;
+    text-align: center;
+    
+}
