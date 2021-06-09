@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+}
+.row{
+    width: 100%;
+   min-height: 500px;
+    background-color: cadetblue;
+    display: flex;
+}
+.col{
+    width: 30%;
+   min-height: 100px;
+
+}
+/*@media(max-width:500px)
+{
+    .col{
+        background-color: green;
+        color: white;
+        text-align: center;
+    }
+}*/
+@media(max-width:500px)
+{
+    .row{
+        flex-direction: column;
+        align-items: center;
+    }
+    .col{
+        margin-top: 10px;
+        width: 100%;
+        padding: 10px;
+    }
+}
