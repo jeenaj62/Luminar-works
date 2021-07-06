@@ -19,6 +19,21 @@ var temperature=[
        let temp=data["temprature"];
        if(dist in weather){
            let old_temp=weather[dist];
+           if(old_temp<temp){
+               weather[dist]=temp;
+           }
+           else
+           {
+               weather[dist]=old_temp;
+           }
            
        }
+       else{
+           weather[dist]=temp;
+       }
     }
+    console.log(weather);
+    function districtSort(data){
+        return Object.entries(data).sort((dist1,dist2)=>dist2[1]-dist1[1]);
+    }
+    console.log(districtSort(weather));

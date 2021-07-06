@@ -10,3 +10,13 @@ var products=[
     
 ]
 console.log(products[6]);
+//highest mrp product
+var highest=products.reduce((item1,item2)=>item1[2]>item2[2]?item1:item2);
+console.log(highest);
+let high=0;
+for(let item of products){
+if(item[2]>high){
+    high=item[2];
+}
+}
+console.log(high);

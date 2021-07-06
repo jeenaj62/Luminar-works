@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Document Object Model
+    </h1>
+    <h2>DOM Attributes</h2>
+    <ul>
+        <li> URL </li>
+        <li>head</li>
+        <li>links</li>
+    </ul>
+   <h2>DOM Method</h2>
+   <ul>
+       <li class="one">document.getElementsByTagname</li>
+       <li id="lst">document.getElementsById</li>
+       <li class="one">document.getElementsByClassName()</li>
+       <li id="htw">document.queryselector</li>
+       <li class="two">document.queryselectorAll</li>
+   </ul>
+</body>
+<script>
+    var lis=document.getElementsByTagName("li");
+    for(let tag of lis){
+        tag.style.color="blue";
+
+    }
+    var item=document.getElementById("lst");
+    item.style.color="green";
+    var lst=document.getElementsByClassName("one");
+    for(let tag of lst){
+        tag.style.color="green";
+    }
+    var htwo=document.querySelector("#htw");
+    htwo.style.color="violet";
+    var ltt=document.querySelectorAll(".two");
+    for(let tag of ltt){
+        tag.style.color="red";
+    }
+var htwo=document.querySelector("h2");
+htwo.innerHTML="<em>DocumentObjectModelMethod</em>";
+htwo.style.color="red";
+</script>
+</html>
