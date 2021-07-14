@@ -1,4 +1,4 @@
-let displayNumb=(num)=>inpt.value+=num;
+let displayNumber=(num)=>inpt.value+=num;
 let evaluteExpression=()=>{
     if(inpt.value==""){
         inpt.value=0;

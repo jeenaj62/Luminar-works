@@ -36,11 +36,24 @@ class Bank{
            console.log("you must login first");
        }
    }
-   fundtranfer(from_accno,to_accno,amt){
-    this.balance+=amt;
+   fundtranfer(user,to_accno,amount){
+   data=this.getAccountDetails();
+   if(!(to_accno in data)){
+       console.log("invalid to_account number");
+   }
+   let balance =data[user]["balance"];
+   if(balance<amount){
+       console.log("transaction failed insufficient balance");
+   }
+   else{
+       data[to_accno].balance+=amount;
+       data[user].balance-=amount;
+   }
 }
 }
-let user=obj.authenticate(1001,"userone");
+var obj=new Bank();
+let user=obj.authenticate(1000,"userone");
 obj.balanceEnq(user);
+obj.fundtranfer(user,1001,2000);
 //obj.createAccount(1000,"jeena",25000);
 //obj.withdrawal(30000);

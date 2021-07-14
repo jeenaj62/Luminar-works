@@ -1,0 +1,53 @@
+<!doctype html>
+      <html>
+      <head>
+      <meta charset="utf-8">
+      <title>JavaSctipt Calculator - ProgramTuts</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+      </head>
+      
+      <body>
+        <div class="container">
+          <form name="form">
+          <div class="display">
+            <input type="text" placeholder="0" name="displayResult"id="inpt" />
+          </div>
+            <div class="buttons">
+              <div class="row">
+              <input type="button" name="b7" value="7" onClick="displayNumb('7')">
+                <input type="button" name="b8" value="8" onClick="displayNumb('8')">
+                <input type="button" name="b9" value="9" onClick="displayNumb('9')">             
+                <input type="button" name="addb" value="+" onClick="displayNumb('+')">
+              </div>
+              
+              <div class="row">
+              <input type="button" name="b4" value="4" onClick="displayNumb('4')">
+                <input type="button" name="b5" value="5" onClick="displayNumb('5')">
+                <input type="button" name="b6" value="6" onClick="displayNumb('6')">
+                <input type="button" name="subb" value="-" onClick="displayNumb('-')">
+              </div>
+              
+              <div class="row">
+              <input type="button" name="b1" value="1" onClick="displayNumb('1')">
+                <input type="button" name="b2" value="2" onClick="displayNumb('2')">
+                <input type="button" name="b3" value="3" onClick="displayNumb('3')">
+                <input type="button" name="mulb" value="*" onClick="displayNumb('*')">
+              </div>
+              
+              <div class="row">
+              <input type="button" name="b0" value="0" onClick="displayNumb('0')">             
+                <input type="button" name="potb" value="." onClick="displayNumb('.')">
+                <input type="button" name="divb" value="/" onClick="displayNumb('/')">
+                <input class="btn" type="button" onclick="clearBox()" value="C" >
+                <input type="button" class="red" value="=" onClick="evaluteExpression()" style="width: 100px;">
+                <input class="btn" type="button" onclick="removeNumber()" value="<">
+      
+              </div>
+            </div>
+          
+          </form>
+        </div>
+      </body>
+        
+      </html>
